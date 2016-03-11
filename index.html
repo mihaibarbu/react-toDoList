@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="/js/bundle.js"></script>
+    </head>
+    <body>
+        <div id="todo">
+        </div>
+
+        <script>
+            var toDoListFactory = React.createFactory(ToDoList);
+            var toDoListInstance = toDoListFactory();
+            ReactDOM.render(toDoListInstance, document.getElementById('todo'));
+        </script>
+    </body>
+</html>
